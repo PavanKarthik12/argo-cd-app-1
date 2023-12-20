@@ -14,7 +14,7 @@ spec:
     targetRevision: master
     helm:
       releaseName: my-release
-      values: values-production.yaml
+      values: values.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
