@@ -12,8 +12,9 @@ spec:
     path: helm-guestbook
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
     targetRevision: master
-  helm:
-    values: values-production.yaml
+    helm:
+      releaseName: my-release
+      values: values-production.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
