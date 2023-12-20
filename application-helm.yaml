@@ -13,7 +13,6 @@ spec:
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
     targetRevision: master
     helm:
-      releaseName: my-release
       values: values.yaml
   syncPolicy:
     syncOptions:
