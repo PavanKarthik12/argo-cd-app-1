@@ -13,7 +13,8 @@ spec:
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
     targetRevision: master
     helm:
-      values: values.yaml
+      valueFiles: 
+      - values.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
