@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: project-with-role
+  namespace: argocd
+spec:
+  description: project-with-role description
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: '*'
+    server: '*'
+  sourceRepos:
+  - '*'
+roles:
+  - name: ci-role
+    description: sync privilliges for demo-project
+    policies:
+    - p,proj.demo-project:ci-role,applications,sync,demo-project/*,allow
+status: {}
