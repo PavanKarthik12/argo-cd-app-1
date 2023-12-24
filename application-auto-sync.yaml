@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: auto-sync
     server: "https://kubernetes.default.svc"
-  project: 
+  project: demo-project
   source:
     path: guestbook-with-sub-directories
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
