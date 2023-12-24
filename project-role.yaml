@@ -20,5 +20,6 @@ spec:
     - name: ci-role
       description: sync privilliges for project-with-role
       policies:
-      - p,proj.project-with-role:ci-role,applications,sync,project-with-role/*,allow
+      - p,proj:project-with-role:ci-role,applications,sync,project-with-role/*,allow
+          
 status: {}
