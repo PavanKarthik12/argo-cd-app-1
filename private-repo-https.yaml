@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
   labels:
     argocd.argoproj.io/secret-type: repository
-  stringData:
-    type: git
-    url: https://github.com/PavanKarthik12/argo-cd-app-1.git
-    pasword: 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
-    username: argo-token1 
+stringData:
+  type: git
+  url: https://github.com/PavanKarthik12/argo-cd-app-1.git
+  pasword: Mylifealways@7531
+  username: PavanKarthik12 
 
 
 
