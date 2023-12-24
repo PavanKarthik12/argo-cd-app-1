@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: guestbook
+    namespace: test-1
     server: "https://kubernetes.default.svc"
-  project: demo-project
+  project: whitelist-project
   source:
     path: helm-guestbook
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
