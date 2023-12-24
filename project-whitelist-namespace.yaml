@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: whitelist-project
+  namespace: argocd
+spec:
+  description: Dev Project
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: 'Namespace'
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+  destinations:
+  - namespace: ns-1
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - '*'
+status: {}
