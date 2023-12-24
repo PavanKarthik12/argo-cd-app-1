@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: guestbook
     server: "https://kubernetes.default.svc"
-  project: default
+  project: demo-project
   source:
     path: helm-guestbook
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
@@ -15,6 +15,7 @@ spec:
     helm:
       valueFiles: 
       - values.yaml
+      - values-production.yaml
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
