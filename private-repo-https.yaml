@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: private-repo-argocd
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  stringData:
+    type: git
+    url: https://github.com/PavanKarthik12/argo-cd-app-1.git
+    pasword: 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
+    username: PavanKarthik12
+
+
+
+
+
+
+
+
+
+
+
+
+
