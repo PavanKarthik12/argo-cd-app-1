@@ -7,7 +7,7 @@ spec:
   destination:
     namespace: directory-app
     server: "https://kubernetes.default.svc"
-  project: default
+  project: demo-project
   source:
     path: guestbook-with-sub-directories
     repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
