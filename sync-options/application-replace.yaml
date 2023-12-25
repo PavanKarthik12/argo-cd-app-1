@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: replace-resources
+  namespace: argocd
+spec:
+  destination:
+    namespace: replace-resources
+    server: "https://kubernetes.default.svc"
+  project: demo-project
+  source:
+    path: sync-options/replace
+    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    targetRevision: master
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
