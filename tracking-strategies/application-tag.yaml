@@ -13,7 +13,7 @@ spec:
     repoURL: "https://github.com/PavanKarthik12/argocd-example-apps.git"
     targetRevision: v1
     directory:
-      recursive: true
+      recurse: true
   syncPolicy:
     automated: {}
     syncOptions:
