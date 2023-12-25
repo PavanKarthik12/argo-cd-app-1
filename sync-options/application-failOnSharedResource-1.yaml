@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-failonsharedresource-1
+  name: application-failonsharedresource-2
   namespace: argocd
 spec:
   destination:
