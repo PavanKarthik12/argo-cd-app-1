@@ -9,8 +9,8 @@ spec:
     server: "https://kubernetes.default.svc"
   project: demo-project
   source:
-    chart: istiod
     repoURL: "https://istio-release.storage.googleapis.com/charts"
+    chart: istiod
     targetRevision: 1.13.4
   syncPolicy:
     automated: {}
