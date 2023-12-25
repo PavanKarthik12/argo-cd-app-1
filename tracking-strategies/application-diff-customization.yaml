@@ -18,8 +18,8 @@ spec:
     automated: {}
     syncOptions:
       - CreateNamespace=true
-    ignoreDifference:
-      - group: apps
-        kind: Deployment
-        jsonPointers:
-        - /spec/replicas
+  ignoreDifference:
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+      - /spec/replicas
