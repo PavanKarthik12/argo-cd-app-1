@@ -4,7 +4,6 @@ metadata:
   name: application-git-track
   namespace: argocd
 spec:
-  description: An application which takes a tag of repo as source
   destination:
     namespace: git-track
     server: "https://kubernetes.default.svc"
