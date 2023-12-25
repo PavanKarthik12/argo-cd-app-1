@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: application-commit-sha
+  namespace: argocd
+spec:
+  destination:
+    namespace: commit-sha
+    server: "https://kubernetes.default.svc"
+  project: demo-project
+  source:
+    path: guestbook
+    repoURL: "https://github.com/PavanKarthik12/argocd-example-apps.git"
+    targetRevision: 2bbb04c
+    directory:
+      recurse: true
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
